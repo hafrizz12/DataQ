@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DataQ</string>
+    <string-array name="kota">
+        <item>Palembang</item>
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Surabaya</item>
+        <item>Denpasar</item>
+    </string-array>
+</resources>
