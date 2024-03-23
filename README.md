@@ -29,6 +29,13 @@ Kontribusi dalam pengembangan aplikasi ini sangat dihargai. Untuk berkontribusi,
 ## Kontributor
 1. Hafidz Muhammad Rizky
 
+## Screenshots
+
+![Dark Mode Screenshot](screenshots/screenshot-dataq1.png)
+![Dark Mode Screenshot](screenshots/screenshot-dataq2.png)
+![Dark Mode Screenshot](screenshots/screenshot-dataq3.png)
+![Dark Mode Screenshot](screenshots/screenshot-dataq4.png)
+
 ## Lisensi
 
 Proyek ini dilisensikan di bawah lisensi [MIT](LICENSE).
