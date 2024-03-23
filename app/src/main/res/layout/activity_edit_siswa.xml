@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".EditSiswa">
 
     <ScrollView
-        android:id="@+id/scrollView3"
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,9 +17,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -36,7 +40,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="-75dp"
                 android:fontFamily="@font/poppins_black"
-                android:text="Data Siswa"
+                android:text="Edit Data Siswa"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -44,13 +48,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/rounded_middle_shadow_card"
+                android:layout_marginTop="40dp"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="NIS" />
 
                 <EditText
-                    android:id="@+id/editTextNis"
+                    android:id="@+id/editTextNis2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/texteditnew"
@@ -63,13 +72,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/rounded_middle_shadow_card"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nama" />
 
                 <EditText
-                    android:id="@+id/editTextNama"
+                    android:id="@+id/editTextNama2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/texteditnew"
@@ -81,75 +95,82 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/rounded_middle_shadow_card"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Alamat" />
 
                 <EditText
-                    android:id="@+id/address"
+                    android:id="@+id/editTextAlamat2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/texteditnew"
                     android:fontFamily="@font/poppins_semibold"
-                    android:hint="Alamat"
-                    android:inputType="textMultiLine"
-                    android:maxLines="4"
-                    android:padding="8dp"
-                    android:textColor="@color/black" />
+                    android:hint="Alamat" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/rounded_middle_shadow_card"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kota" />
 
                 <Spinner
-                    android:id="@+id/spinnerKota"
+                    android:id="@+id/spinnerKota2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/texteditnew"
                     android:entries="@array/kota"
                     android:fontFamily="@font/poppins_semibold"
                     android:padding="8dp"
                     android:spinnerMode="dropdown" />
-
-
+                />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/rounded_middle_shadow_card"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Jenis Kelamin" />
 
                 <RadioGroup
-                    android:id="@+id/jenisKelaminG"
+                    android:id="@+id/radioGroupGender2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/lakiLaki"
+                        android:id="@+id/radioButtonLaki2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="Laki-laki"
-                        android:textColor="@color/black"></RadioButton>
+                        android:text="Laki-laki" />
 
                     <RadioButton
-                        android:id="@+id/perempuan"
+                        android:id="@+id/radioButtonPerempuan2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="Perempuan"
-                        android:textColor="@color/black"></RadioButton>
+                        android:text="Perempuan" />
 
                 </RadioGroup>
 
@@ -158,13 +179,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/rounded_middle_shadow_card"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Alamat" />
 
                 <EditText
-                    android:id="@+id/umur"
+                    android:id="@+id/editTextUmur2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/texteditnew"
@@ -174,38 +200,42 @@
 
             </LinearLayout>
 
-            <LinearLayout
+
+            <Button
+                android:id="@+id/buttonUpdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/rounded_middle_shadow_card"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_margin="16dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Update"
+                android:textColor="@color/white" />
 
-                <Button
-                    android:id="@+id/simpan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Simpan"
-                    android:textColor="@color/white"></Button>
-
-            </LinearLayout>
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Hapus"
+                android:textColor="@color/white" />
 
 
         </LinearLayout>
 
-
     </ScrollView>
 
-    <Button
-        android:id="@+id/lihatSiswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginTop="15dp"
-        android:text="Lihat Siswa"
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_middle_shadow_card"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

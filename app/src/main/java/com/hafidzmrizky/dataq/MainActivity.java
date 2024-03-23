@@ -2,6 +2,7 @@ package com.hafidzmrizky.dataq;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.widget.ArrayAdapter;
@@ -45,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+        Button lihatSiswa = findViewById(R.id.lihatSiswa);
+        lihatSiswa.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LihatSiswa.class);
+            startActivity(intent);
+        });
 
 
         simpan.setOnClickListener(v -> {
@@ -113,6 +120,8 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 siswaService.removeSiswa(siswa);
+                Intent intent = new Intent(this, LihatSiswa.class);
+                startActivity(intent);
                 Toast.makeText(this, "Berhasil", Toast.LENGTH_SHORT).show();
             } catch (Exception e) {
                 e.printStackTrace();
