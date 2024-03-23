@@ -1,1 +1,1 @@
-- poco m3 pro 5g
+- pixel 3a
